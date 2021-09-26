@@ -55,7 +55,8 @@ def predict_flower(query_data: QueryIn):
 # Response: Dict with detail confirming success (200)
 def feedback_loop(data: List[FeedbackIn]):
     retrain(data)
-    return {"detail": "Feedback loop successful"}
+    deail_report = {"detail": "Feedback loop successful"}
+    return deail_report
 
 
 # Main function to start the app when main.py is called
