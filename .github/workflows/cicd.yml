@@ -30,7 +30,7 @@ jobs:
     strategy:
       matrix: 
         python: ['3.7', '3.8', '3.9']
-        OS_LIST: ['ubuntu:20.04', 'windows:latest']
+        OS_LIST: ['ubuntu-20.04', 'windows-latest']
     env:
       PYTHON: ${{ matrix.python }}
     # define the individual sequential steps to be run
