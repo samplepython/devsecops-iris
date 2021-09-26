@@ -1,7 +1,9 @@
 name: ci-cd
 
 # run the action on pull_requests and pushes
-on: push
+on: 
+  push:
+    branches: [ main ]  
 
 jobs:
   # first job to test the application using pytest
